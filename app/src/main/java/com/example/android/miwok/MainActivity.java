@@ -29,8 +29,24 @@ public class MainActivity extends AppCompatActivity {
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
     }
-    public void openNumbersList(View view){
+
+    public void openNumbersList(View view) {
         Intent i = new Intent(this, NumbersActivity.class);
+        startActivity(i);
+    }
+
+    public void openColoursList(View view) {
+        Intent i = new Intent(this, ColoursActivity.class);
+        startActivity(i);
+    }
+
+    public void openFamilyMembers(View view) {
+        Intent i = new Intent(this, FamilyMembers.class);
+        startActivity(i);
+    }
+
+    public void openPhrases(View view) {
+        Intent i = new Intent(this, PhrasesActivity.class);
         startActivity(i);
     }
 }
